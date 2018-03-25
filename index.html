@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component1.css" />
+		<script src="js/modernizr-2.6.2.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+	</head>
+	<body>
+		<div class="container">
+			<!-- Top Navigation -->
+			
+			<div id="screen1" class="component">
+				<header>
+					<h1>Welcome Captain America<span>Click begin to start</span></h1>
+				</header>
+				<img class="cap-logo" src="images/cap-logo.png" alt="">
+				<a id="begin" class="button" href="#screen2" onClick="document.getElementById('screen2').style.display='block';document.getElementById('menu').style.display='block';document.getElementById('screen1').style.display='none';">Begin</a>
+			</div>
+
+			<div id="screen2" class="component" style="display: none;">
+				<header>
+					<h1>Choose the mission from the menu<span>Touch the '+' button at the center</span></h1>	
+				</header>
+			</div>
+
+			<div id="screen3" class="component" style="display: none;">
+				<header>
+					<h1>Select one mission</h1>
+				</header>
+				<a id="taskCombat" class="button" href="javascript:void(0)">Self Combat</a>
+				<a id="taskAvengers" class="button" href="javascript:void(0)">Avengers Co-ordination</a>
+			</div>
+			<div id="screen3I" class="component" style="display: none;">
+				<header>
+					<h1>Select one scenario</h1>
+				</header>
+				<a id="scan" class="button" href="javascript:void(0)">Scan Target</a>
+				<a id="near" class="button" href="javascript:void(0)">Near Target</a>
+				<a id="far" class="button" href="javascript:void(0)">Far Target</a>
+			</div>
+
+			<div id="screen3a1" class="component" style="display: none;">
+				<header>
+					<h1>View of the target<span>Nano camera captured</span></h1>	
+				</header>
+				<a id="scanTarget" class="button" href="javascript:void(0)">Scan Target</a>
+			</div>
+			<div id="screen3a2" class="component" style="display: none;">
+				<header>
+					<h1>AR view of the target<span>Legend of the target scanned</span></h1>	
+				</header>
+			</div>
+			<div id="screen3b1" class="component" style="display: none;">
+				<header>
+					<h1>Click on button to know what to do next</h1>
+				</header>
+				<div><a id="nearTarget" class="button" href="javascript:void(0)">Fight style</a></div>
+			</div>
+			<div id="screen3b2" class="component" style="display: none;">
+				<header>
+					<h1>Fight style listed</h1>
+				</header>
+			</div>
+			<div id="screen3c1" class="component" style="display: none;">
+				<header>
+					<h1>Click on button to know what to do next</h1>
+				</header>
+				<div><a id="farTarget" class="button" href="javascript:void(0)">Fight style</a></div>
+			</div>
+			<div id="screen3c2" class="component" style="display: none;">
+				<header>
+					<h1>Fight style listed</h1>
+				</header>
+			</div>
+
+			<div id="screen3II" class="component" style="display: none;">
+				<header>
+					<h1>Select one scenario</h1>
+				</header>
+				<a id="not1" class="button" href="javascript:void(0)">IRONMAN needs help</a>
+				<a id="not2" class="button" href="javascript:void(0)">HULK shot</a>
+			</div>
+			<div id="screen4" class="component" style="display: none;">
+				<header>
+					<h1>Notification recieved<span>Iron Man needs help</span></h1>
+				</header>
+				<a id="help1" class="button" href="javascript:void(0)">Go Help</a>
+				<a id="alert1" class="button" href="javascript:void(0)">Alert Avengers</a>
+			</div>
+			<div id="screen4a" class="component" style="display: none;">
+				<header>
+					<h1>Go help<span>Follow map</span></h1>
+				</header>
+			</div>
+			<div id="screen4b" class="component" style="display: none;">
+				<header>
+					<h1>Nearest Avenger alerted</h1>
+				</header>
+			</div>
+
+			<div id="screen5" class="component" style="display: none;">
+				<header>
+					<h1>Notification recieved<span>Hulk is shot</span></h1>
+				</header>
+				<a id="help2" class="button" href="javascript:void(0)">Go Help</a>
+				<a id="alert2" class="button" href="javascript:void(0)">Alert Avengers</a>
+			</div>
+			<div id="screen5a" class="component" style="display: none;">
+				<header>
+					<h1>Go to location<span>Follow map</span></h1>
+				</header>
+			</div>
+			<div id="screen5b" class="component" style="display: none;">
+				<header>
+					<h1>All Avengers alerted</h1>
+				</header>
+			</div>
+			<div id="screen6" class="component" style="display: none;">
+				<header>
+					<h1>Avengers List</h1>
+				</header>
+			</div>
+			<div id="screen7" class="component" style="display: none;">
+				<header>
+					<h1>Select the view of map</h1>
+				</header>
+				<a id="map1" class="button" href="javascript:void(0)">2D Map</a>
+				<a id="map2" class="button" href="javascript:void(0)">3D Map</a>
+			</div>
+			<div id="screen7a" class="component" style="display: none;">
+				<header>
+					<h1>2D Map</h1>
+				</header>
+			</div>
+			<div id="screen7b" class="component" style="display: none;">
+				<header>
+					<h1>3D Map</h1>
+				</header>
+			</div>
+			<div id="screen8" class="component" style="display: none;">
+				<header>
+					<h1>Messages</h1>
+				</header>
+				<span>NO MESSAGES</span>
+			</div>
+
+			<!-- Start Nav Structure -->
+			<div id="menu" style="display: none;">
+				<button class="cn-button" id="cn-button">+</button>
+				<div class="cn-wrapper" id="cn-wrapper">
+				    <ul>
+				      <li class="missions"><a href="#missions"></span><span class="menu-label">MISSIONS</span><span class="icon-file"></a></li>
+				      <li class="avengers"><a href="#avengers"><span class="menu-label">AVENGERS</span><span class="icon-avengers">A</span></a></li>
+				      <li class="home"><a href="#home"><span class="menu-label">HOME</span><span class="icon-home"></span></a></li>
+				      <li class="map"><a href="#map"><span class="menu-label">MAP</span><span class="icon-map-marker"></span></a></li>
+				      <li class="messages"><a href="#notifications"><span class="menu-label">MESSAGES</span><span class="icon-envelope-alt"></span></a></li>
+				     </ul>
+				</div>
+				<div id="cn-overlay" class="cn-overlay"></div>
+			</div>
+				
+				<!-- End Nav Structure -->
+		</div><!-- /container -->
+		<script src="js/polyfills.js"></script>
+		<script src="js/demo1.js"></script>
+		<script type="text/javascript">
+			$(".missions").click(function(){
+				$('.component').hide();
+				$('#screen3').show();
+			});
+			$(".home").click(function(){
+				$('.component').hide();
+				$('#screen2').show();
+			});
+			
+			$(".avengers").click(function(){
+				$('.component').hide();
+				$('#screen6').show();
+			});
+			$(".map").click(function(){
+				$('.component').hide();
+				$('#screen7').show();
+			});
+			$("#map1").click(function(){
+				$('.component').hide();
+				$('#screen7a').show();
+			});
+			$("#map2").click(function(){
+				$('.component').hide();
+				$('#screen7b').show();
+			});
+
+			$(".messages").click(function(){
+				$('.component').hide();
+				$('#screen8').show();
+			});
+
+			$("#taskCombat").click(function(){
+				$('.component').hide();
+				$('#screen3I').show();
+			});
+			
+			$("#scan").click(function(){
+				$('.component').hide();
+				$('#screen3a1').show();
+			});
+			$("#scanTarget").click(function(){
+				$('.component').hide();
+				$('#screen3a2').show();
+			});
+
+			$("#near").click(function(){
+				$('.component').hide();
+				$('#screen3b1').show();
+			});
+			$("#nearTarget").click(function(){
+				$('.component').hide();
+				$('#screen3b2').show();
+			});
+
+			$("#far").click(function(){
+				$('.component').hide();
+				$('#screen3c1').show();
+			});
+			$("#farTarget").click(function(){
+				$('.component').hide();
+				$('#screen3c2').show();
+			});
+
+			$("#taskAvengers").click(function(){
+				$('.component').hide();
+				$('#screen3II').show();
+			});
+			$("#not1").click(function(){
+				$('.component').hide();
+				$('#screen4').show();
+			});
+			$("#help1").click(function(){
+				$('.component').hide();
+				$('#screen4a').show();
+			});
+			$("#alert1").click(function(){
+				$('.component').hide();
+				$('#screen4b').show();
+			});
+
+
+			$("#not2").click(function(){
+				$('.component').hide();
+				$('#screen5').show();
+			});
+			$("#help2").click(function(){
+				$('.component').hide();
+				$('#screen5a').show();
+			});
+			$("#alert2").click(function(){
+				$('.component').hide();
+				$('#screen5b').show();
+			});
+		</script>
+	</body>
+</html>
+
+<!-- <a href="#myhiddensection" onClick="document.getElementById('myhiddensection').style.display='block';"> -->
